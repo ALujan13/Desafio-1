@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Moderustic:wght@300..800&display=swap');
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #072B61;
+    --color-terciario: #495057;
+    --color-boton: #0A3871;
+    --color-boxback: #f5f1f7;
+    --color-hover: #272727; 
+
+    --fuente-inter: 'Inter', sans-serif;
+    --fuente-moderustic: 'moderustic', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+}
+
+.presentacion {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__texto {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    padding: 2% 1% 2% 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    padding: 1% 1% 1% 1%;
+}
+
+.header__top {
+    padding: 1px; 
+    box-shadow: 2px 2px 2px 1px var(--color-hover);
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: 10%;
+}
+
+.titulo {
+    display: flex;
+    padding: 1% 1% 1% 1%;
+    margin: auto;
+    justify-content: space-between ;
+    color: var(--color-secundario);
+    font-family: var(--fuente-moderustic);
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.presentacion__texto {
+    color: var(--color-secundario);
+}
+
+.box {
+    padding: 20px;
+    margin: 0px 15px 0px 15px;
+    background-color: var(--color-boxback);
+    border-radius: 1rem;
+    width: 25vw;
+    height: 15vw;
+}
+
+.btn {
+    border: 0;
+    color: var(--color-primario);
+    font-weight: bold;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-input {
+    border-radius: 0.5em;
+    border: 1px solid var(--color-secundario);
+    display: block;
+    padding: 0.3em;
+    width: 100%;
+    height: 100px;
+    background-color:var(--color-primario);
+    overflow:hidden;
+}
+
+.presentacion__imagen{
+    width: 30%;
+}
+
+.footer {
+    text-align: center;  
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    position:fixed;
+    background-color: var(--color-boxback);
+}
+
+.footer__texto{
+    font-family:var(--fuente-inter);
+    font-size:20px;
+    color:var(--color-secundario);
+    padding: 15% 0% 0% 1%;
+}

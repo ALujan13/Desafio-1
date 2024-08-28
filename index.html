@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<img class="header__logo" src="./assets/Logo.png">
+<body>
+    <header class="header">
+        <div class="header__top"></div>
+        <h1 class="titulo"><strong> Encriptador de texto</strong></h1> 
+    </header>
+<main class="presentacion">
+    <section class="form box">
+        <form action="">
+        <label for="input-texto" class="presentacion__texto">Solo letras minúsculas, sin acento:</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="button" value="Encriptar!" id="btn-encriptar">
+        <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar">
+        </form>
+    </section>
+    <section class="msg box">
+        <label for="input-texto" class="presentacion__texto">Mensaje encriptado:</label>
+        <input class="text-input" type="text" id="msg"></input>
+        <input class="btn" type="button" value="Copiar" id="btn-copy">
+    </section>
+    <img class="presentacion__imagen" src="./assets/Muñeco.png" alt="El logo del muñeco de búsqueda">
+</main>
+<footer>   
+    <p class="footer__texto">Proyecto para Alura Latam</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
